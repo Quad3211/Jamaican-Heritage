@@ -1,0 +1,115 @@
+<!-- ═══════════════════════════════════════════════ HERO ═══ -->
+<section class="hero-section" aria-label="Hero banner">
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="section-label">Welcome to Jamaican Heritage</span>
+      <h1>Taste the <span class="accent">Spirit</span><br />of Jamaica</h1>
+      <p>
+        From the misty Blue Mountains to Kingston's vibrant streets — we bring
+        you authentic Jamaican products crafted with pride and passion.
+      </p>
+      <div class="hero__actions">
+        <a routerLink="/shop" class="btn btn-accent btn-lg">Shop Now</a>
+        <a
+          routerLink="/about"
+          class="btn btn-outline btn-lg"
+          style="
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.5);
+            --jam-green: transparent;
+          "
+          >Our Story</a
+        >
+      </div>
+    </div>
+    <div class="hero__badges" aria-hidden="true">
+      <div class="hero-badge">🌿 Natural</div>
+      <div class="hero-badge">🤝 Artisan</div>
+      <div class="hero-badge">🇯🇲 Authentic</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════ FEATURED PRODUCTS ═══ -->
+<section class="section" aria-label="Featured products">
+  <div class="container">
+    <p class="section-label">Handpicked for you</p>
+    <h2 class="section-title">Featured <span>Products</span></h2>
+
+    <app-loading-spinner *ngIf="loading"></app-loading-spinner>
+
+    <div class="grid-products" *ngIf="!loading">
+      <article
+        class="product-card"
+        *ngFor="let product of featured"
+        [attr.aria-label]="product.name"
+      >
+        <a [routerLink]="['/shop', product.id]">
+          <img
+            class="product-card__image"
+            [src]="product.image_url"
+            [alt]="product.name"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="product-card__body">
+          <span class="product-card__category">{{ product.category }}</span>
+          <h3 class="product-card__name">
+            <a [routerLink]="['/shop', product.id]">{{ product.name }}</a>
+          </h3>
+          <p
+            class="text-muted"
+            style="
+              font-size: 0.88rem;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+            "
+          >
+            {{ product.description }}
+          </p>
+          <div class="product-card__price">
+            £{{ product.price | number: "1.2-2" }}
+          </div>
+          <a
+            [routerLink]="['/shop', product.id]"
+            class="btn btn-primary"
+            style="width: 100%"
+            >View Product</a
+          >
+        </div>
+      </article>
+    </div>
+
+    <div class="text-center mt-xl">
+      <a routerLink="/shop" class="btn btn-outline">Browse All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════ CULTURE BANNER ═══ -->
+<section class="culture-section" aria-label="About Jamaican heritage">
+  <div class="container culture__inner">
+    <div class="culture__text">
+      <p class="section-label">Rich & Vibrant</p>
+      <h2 class="section-title">
+        More than a shop — <span>a celebration</span>
+      </h2>
+      <p>
+        Jamaica's heritage runs deep — forged by resilience, creativity, and an
+        unbreakable spirit. Every product in our store tells that story.
+      </p>
+      <a routerLink="/about" class="btn btn-primary mt-md"
+        >Discover the Heritage</a
+      >
+    </div>
+    <div class="culture__flags" aria-hidden="true">
+      <span class="culture-flag black"></span>
+      <span class="culture-flag gold"></span>
+      <span class="culture-flag green"></span>
+    </div>
+  </div>
+</section>

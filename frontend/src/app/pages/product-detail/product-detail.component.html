@@ -1,0 +1,78 @@
+<section class="section" aria-label="Product detail">
+  <div class="container">
+    <app-loading-spinner *ngIf="loading"></app-loading-spinner>
+
+    <div *ngIf="!loading && product" class="product-detail">
+      <div class="product-detail__image-wrap">
+        <img
+          [src]="product.image_url"
+          [alt]="product.name"
+          class="product-detail__image"
+          width="600"
+          height="600"
+        />
+      </div>
+
+      <div class="product-detail__info">
+        <span class="section-label">{{ product.category }}</span>
+        <h1>{{ product.name }}</h1>
+        <p class="product-detail__price">
+          £{{ product.price | number: "1.2-2" }}
+        </p>
+        <p class="product-detail__desc">{{ product.description }}</p>
+
+        <div class="product-detail__stock">
+          <span *ngIf="product.stock > 0" class="badge badge-green"
+            >In Stock ({{ product.stock }})</span
+          >
+          <span *ngIf="product.stock === 0" class="badge badge-red"
+            >Out of Stock</span
+          >
+        </div>
+
+        <div class="product-detail__actions">
+          <div class="qty-control">
+            <button
+              (click)="decreaseQty()"
+              [disabled]="qty <= 1"
+              aria-label="Decrease quantity"
+              class="btn btn-ghost btn-sm"
+            >
+              −
+            </button>
+            <span class="qty-value" aria-live="polite">{{ qty }}</span>
+            <button
+              (click)="increaseQty()"
+              aria-label="Increase quantity"
+              class="btn btn-ghost btn-sm"
+            >
+              +
+            </button>
+          </div>
+          <button
+            class="btn btn-accent btn-lg"
+            (click)="addToCart()"
+            [disabled]="product.stock === 0"
+          >
+            Add to Cart 🛒
+          </button>
+        </div>
+
+        <div
+          *ngIf="addedMessage"
+          class="alert alert-success mt-md"
+          role="alert"
+        >
+          {{ addedMessage }}
+        </div>
+
+        <a routerLink="/shop" class="btn btn-ghost mt-lg">← Back to Shop</a>
+      </div>
+    </div>
+
+    <div *ngIf="!loading && !product" class="empty-state text-center">
+      <h2>Product not found</h2>
+      <a routerLink="/shop" class="btn btn-outline mt-md">Return to Shop</a>
+    </div>
+  </div>
+</section>

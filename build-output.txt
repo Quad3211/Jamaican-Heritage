@@ -1,0 +1,1395 @@
+﻿npx : - Generating browser 
+application bundles 
+(phase: setup)...
+At line:1 char:1
++ npx ng build 2>&1 | 
+Out-File -FilePath C:\mypro
+jects\Class-excerise\J ...
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecifi    ed: 
+(- Generating     
+br...hase: setup).    
+..:String) [], Rem    
+oteException
+    + FullyQualifiedEr    
+rorId : NativeComm    
+andError
+ 
+Γ£ö Browser application 
+bundle generation complete.
+Γ£ö Browser application 
+bundle generation complete.
+
+Warning: C:/myprojects/Clas
+s-excerise/Jamaican-Heritag
+e/frontend/src/app/shared/h
+eader/header.component.scss
+ exceeded maximum budget. 
+Budget 2.00 kB was not met 
+by 984 bytes with a total 
+of 2.96 kB.
+
+
+
+Error: node_modules/@types/
+node/child_process.d.ts:318
+:9 - error TS1165: A 
+computed property name in 
+an ambient context must 
+refer to an expression 
+whose type is a literal 
+type or a 'unique symbol' 
+type.
+
+318         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/child_process.d.ts:318
+:17 - error TS2339: 
+Property 'dispose' does 
+not exist on type 
+'SymbolConstructor'.
+
+318         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/dgram.d.ts:558:9 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+558         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/dgram.d.ts:558:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+558         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/events.d.ts:581:91 - 
+error TS2304: Cannot find 
+name 'Disposable'.
+
+581         function 
+addAbortListener(signal: 
+AbortSignal, resource: 
+(event: Event) => void): 
+Disposable;
+                           
+                           
+                           
+             ~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:330:9 - error 
+TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+330         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:330:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+330         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:336:9 - error 
+TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+336         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:336:17 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+336         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:657:9 - error 
+TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+657         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:657:17 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+657         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:2155:41 - 
+error TS2304: Cannot find 
+name 'Disposable'.
+
+2155     interface 
+DisposableTempDir extends 
+Disposable {
+                           
+                  
+~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:2167:9 - 
+error TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+2167         
+[Symbol.dispose](): void;
+             
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs.d.ts:2167:17 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+2167         
+[Symbol.dispose](): void;
+                     
+~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs/promises.d.ts:496:9
+ - error TS1169: A 
+computed property name in 
+an interface must refer to 
+an expression whose type 
+is a literal type or a 
+'unique symbol' type.
+
+496         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs/promises.d.ts:496:1
+7 - error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+496         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs/promises.d.ts:982:4
+1 - error TS2304: Cannot 
+find name 
+'AsyncDisposable'.
+
+982     interface 
+DisposableTempDir extends 
+AsyncDisposable {
+                           
+                 
+~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs/promises.d.ts:994:9
+ - error TS1169: A 
+computed property name in 
+an interface must refer to 
+an expression whose type 
+is a literal type or a 
+'unique symbol' type.
+
+994         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/fs/promises.d.ts:994:1
+7 - error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+994         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/inspector.d.ts:49:66 
+- error TS2304: Cannot 
+find name 'Disposable'.
+
+49     function 
+open(port?: number, host?: 
+string, wait?: boolean): 
+Disposable;
+                           
+                           
+              ~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/net.d.ts:617:9 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+617         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/net.d.ts:617:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+617         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/perf_hooks.d.ts:461:9 
+- error TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+461         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/perf_hooks.d.ts:461:17
+ - error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+461         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/quic.d.ts:427:35 - 
+error TS2304: Cannot find 
+name 'AsyncDisposable'.
+
+427     class QuicEndpoint 
+implements AsyncDisposable 
+{
+                           
+           ~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/quic.d.ts:494:9 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+494         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/quic.d.ts:494:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+494         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/quic.d.ts:583:34 - 
+error TS2304: Cannot find 
+name 'AsyncDisposable'.
+
+583     class QuicSession 
+implements AsyncDisposable 
+{
+                           
+          ~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/quic.d.ts:688:9 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+688         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/quic.d.ts:688:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+688         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/readline.d.ts:62:46 - 
+error TS2304: Cannot find 
+name 'Disposable'.
+
+62     class Interface 
+implements EventEmitter, 
+Disposable {
+                           
+                     
+~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/readline.d.ts:223:9 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+223         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/readline.d.ts:223:17 
+- error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+223         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/sqlite.d.ts:241:35 - 
+error TS2304: Cannot find 
+name 'Disposable'.
+
+241     class DatabaseSync 
+implements Disposable {
+                           
+           ~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/sqlite.d.ts:516:9 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+516         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/sqlite.d.ts:516:17 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+516         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/stream.d.ts:672:13 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+672             
+[Symbol.asyncDispose](): 
+Promise<void>;
+                
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/stream.d.ts:672:21 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+672             
+[Symbol.asyncDispose](): 
+Promise<void>;
+                        
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/stream.d.ts:1004:13 - 
+error TS1165: A computed 
+property name in an 
+ambient context must refer 
+to an expression whose 
+type is a literal type or 
+a 'unique symbol' type.
+
+1004             
+[Symbol.asyncDispose](): 
+Promise<void>;
+                 
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/stream.d.ts:1004:21 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+1004             
+[Symbol.asyncDispose](): 
+Promise<void>;
+                         
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/stream.d.ts:1549:17 - 
+error TS5084: Tuple 
+members must all have 
+names or all not have 
+names.
+
+1549                 
+...[PipelineSource<any>, 
+...PipelineTransform<any, 
+any>[], 
+PipelineDestination<any, 
+any>],
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~
+
+
+Error: node_modules/@types/
+node/stream/promises.d.ts:2
+02:13 - error TS5084: 
+Tuple members must all 
+have names or all not have 
+names.
+
+202             
+PipelineSource<any>,
+                
+~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/test.d.ts:2187:13 - 
+error TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+2187             
+[Symbol.dispose](): void;
+                 
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/test.d.ts:2187:21 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+2187             
+[Symbol.dispose](): void;
+                         
+~~~~~~~
+
+
+Error: node_modules/@types/
+node/timers.d.ts:34:53 - 
+error TS2304: Cannot find 
+name 'Disposable'.
+
+34             interface 
+Immediate extends 
+RefCounted, Disposable {
+                           
+                           
+ ~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/timers.d.ts:64:17 - 
+error TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+64                 
+[Symbol.dispose](): void;
+                   
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/timers.d.ts:64:25 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+64                 
+[Symbol.dispose](): void;
+                           
+~~~~~~~
+
+
+Error: node_modules/@types/
+node/timers.d.ts:86:51 - 
+error TS2304: Cannot find 
+name 'Disposable'.
+
+86             interface 
+Timeout extends 
+RefCounted, Disposable, 
+Timer {
+                           
+                          
+~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/timers.d.ts:144:17 - 
+error TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+144                 
+[Symbol.dispose](): void;
+                    
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/timers.d.ts:144:25 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+144                 
+[Symbol.dispose](): void;
+                           
+ ~~~~~~~
+
+
+Error: node_modules/@types/
+node/ts5.6/index.d.ts:29:21
+ - error TS2726: Cannot 
+find lib definition for 
+'esnext.disposable'.
+
+29 /// <reference 
+lib="esnext.disposable" />
+                       
+~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/v8.d.ts:421:9 - error 
+TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+421         
+[Symbol.dispose](): void;
+            
+~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/v8.d.ts:421:17 - 
+error TS2339: Property 
+'dispose' does not exist 
+on type 
+'SymbolConstructor'.
+
+421         
+[Symbol.dispose](): void;
+                    ~~~~~~~
+
+
+Error: node_modules/@types/
+node/v8.d.ts:437:9 - error 
+TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+437         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/v8.d.ts:437:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+437         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/v8.d.ts:453:9 - error 
+TS1169: A computed 
+property name in an 
+interface must refer to an 
+expression whose type is a 
+literal type or a 'unique 
+symbol' type.
+
+453         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/v8.d.ts:453:17 - 
+error TS2339: Property 
+'asyncDispose' does not 
+exist on type 
+'SymbolConstructor'.
+
+453         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/web-globals/streams.d.
+ts:40:9 - error TS2502: 
+'CompressionStream' is 
+referenced directly or 
+indirectly in its own type 
+annotation.
+
+40     var 
+CompressionStream: typeof 
+globalThis extends {
+           
+~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/web-globals/streams.d.
+ts:51:9 - error TS2502: 
+'DecompressionStream' is 
+referenced directly or 
+indirectly in its own type 
+annotation.
+
+51     var 
+DecompressionStream: 
+typeof globalThis extends {
+           
+~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/web-globals/streams.d.
+ts:60:9 - error TS2502: 'Re
+adableByteStreamController'
+ is referenced directly or 
+indirectly in its own type 
+annotation.
+
+60     var ReadableByteStre
+amController: typeof 
+globalThis extends
+           ~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/web-globals/streams.d.
+ts:68:9 - error TS2502: 
+'ReadableStreamBYOBReader' 
+is referenced directly or 
+indirectly in its own type 
+annotation.
+
+68     var 
+ReadableStreamBYOBReader: 
+typeof globalThis extends 
+{ onmessage: any; 
+ReadableStreamBYOBReader: 
+infer T } ? T
+           
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/web-globals/streams.d.
+ts:72:9 - error TS2502: 'Re
+adableStreamBYOBRequest' 
+is referenced directly or 
+indirectly in its own type 
+annotation.
+
+72     var 
+ReadableStreamBYOBRequest: 
+typeof globalThis extends 
+{ onmessage: any; 
+ReadableStreamBYOBRequest: 
+infer T } ? T
+           
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/worker_threads.d.ts:39
+4:9 - error TS1165: A 
+computed property name in 
+an ambient context must 
+refer to an expression 
+whose type is a literal 
+type or a 'unique symbol' 
+type.
+
+394         
+[Symbol.asyncDispose](): 
+Promise<void>;
+            
+~~~~~~~~~~~~~~~~~~~~~
+
+
+Error: node_modules/@types/
+node/worker_threads.d.ts:39
+4:17 - error TS2339: 
+Property 'asyncDispose' 
+does not exist on type 
+'SymbolConstructor'.
+
+394         
+[Symbol.asyncDispose](): 
+Promise<void>;
+                    
+~~~~~~~~~~~~
+
+
+Error: node_modules/typescr
+ipt/lib/lib.dom.d.ts:14003:
+11 - error TS2430: 
+Interface 'TextEncoder' 
+incorrectly extends 
+interface 'import("node:uti
+l").TextEncoder'.
+  The types of 
+'encodeInto(...).read' are 
+incompatible between these 
+types.
+    Type 'number | 
+undefined' is not 
+assignable to type 
+'number'.
+      Type 'undefined' is 
+not assignable to type 
+'number'.
+
+14003 interface 
+TextEncoder extends 
+TextEncoderCommon {
+                ~~~~~~~~~~~
+
+
+Error: src/app/pages/cart/c
+art.component.html:59:13 - 
+error NG8002: Can't bind 
+to 'aria-label' since it 
+isn't a known property of 
+'button'.
+
+59             
+aria-label="Remove {{ 
+item.product.name }}"
+               ~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+
+  src/app/pages/cart/cart.c
+omponent.ts:7:16
+    7   templateUrl: 
+'./cart.component.html',
+                     
+~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+CartComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:5:5 - error 
+NG8001: 
+'app-loading-spinner' is 
+not a known element:
+1. If 
+'app-loading-spinner' is 
+an Angular component, then 
+verify that it is part of 
+this module.
+2. If 
+'app-loading-spinner' is a 
+Web Component then add 
+'CUSTOM_ELEMENTS_SCHEMA' 
+to the '@NgModule.schemas' 
+of this component to 
+suppress this message.
+
+5     <app-loading-spinner 
+*ngIf="loading"></app-loadi
+ng-spinner>
+      ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:32:24 - error 
+NG5002: Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              'badge-gold':
+                
+order.status === 'pending' 
+|| order.status === 
+'processing',
+              'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\myproj
+ects\Class-excerise\Jamaica
+n-Heritage\frontend\src\app
+\pages\order-history\order-
+history.component.html@31:2
+3
+
+ 32             
+[ngClass]="{
+                           
+~
+ 33               
+'badge-green': 
+order.status === 
+'delivered',
+    ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+... 
+ 36               
+'badge-red': order.status 
+=== 'cancelled',
+    ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+ 37             }"
+    ~~~~~~~~~~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:38:14 - error 
+NG5002: Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              'badge-gold':
+                
+order.status === 'pending' 
+|| order.status === 
+'processing',
+              'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\myproj
+ects\Class-excerise\Jamaica
+n-Heritage\frontend\src\app
+\pages\order-history\order-
+history.component.html@31:2
+3
+
+38             >{{ 
+order.status | titlecase 
+}}</span
+                ~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:42:35 - error 
+NG5002: Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              'badge-gold':
+                
+order.status === 'pending' 
+|| order.status === 
+'processing',
+              'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\myproj
+ects\Class-excerise\Jamaica
+n-Heritage\frontend\src\app
+\pages\order-history\order-
+history.component.html@31:2
+3
+
+42           <div 
+class="order-item" 
+*ngFor="let item of 
+order.items">
+                           
+          ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:43:19 - error 
+NG5002: Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              'badge-gold':
+                
+order.status === 'pending' 
+|| order.status === 
+'processing',
+              'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\myproj
+ects\Class-excerise\Jamaica
+n-Heritage\frontend\src\app
+\pages\order-history\order-
+history.component.html@31:2
+3
+
+43             <span>{{ 
+item.name }} ├ù {{ 
+item.quantity }}</span>
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:45:16 - error 
+NG5002: Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              'badge-gold':
+                
+order.status === 'pending' 
+|| order.status === 
+'processing',
+              'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\myproj
+ects\Class-excerise\Jamaica
+n-Heritage\frontend\src\app
+\pages\order-history\order-
+history.component.html@31:2
+3
+
+45               >┬ú{{ 
+item.unit_price * 
+item.quantity | number: 
+"1.2-2" }}</span
+                  ~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/order-
+history/order-history.compo
+nent.html:51:14 - error 
+NG5002: Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              'badge-gold':
+                
+order.status === 'pending' 
+|| order.status === 
+'processing',
+              'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\myproj
+ects\Class-excerise\Jamaica
+n-Heritage\frontend\src\app
+\pages\order-history\order-
+history.component.html@31:2
+3
+
+51             >Total: 
+┬ú{{ order.total_price | 
+number: "1.2-2" }}</span
+                ~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+
+  src/app/pages/order-histo
+ry/order-history.component.
+ts:6:16
+    6   templateUrl: './ord
+er-history.component.html',
+                     ~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/profil
+e/profile.component.html:8:
+7 - error NG8001: 
+'app-loading-spinner' is 
+not a known element:
+1. If 
+'app-loading-spinner' is 
+an Angular component, then 
+verify that it is part of 
+this module.
+2. If 
+'app-loading-spinner' is a 
+Web Component then add 
+'CUSTOM_ELEMENTS_SCHEMA' 
+to the '@NgModule.schemas' 
+of this component to 
+suppress this message.
+
+8       
+<app-loading-spinner *ngIf=
+"loading"></app-loading-spi
+nner>
+        ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/profile/pro
+file.component.ts:7:16
+    7   templateUrl: 
+'./profile.component.html',
+                     
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+ProfileComponent.
+
+
+Error: src/app/shared/heade
+r/header.component.html:37:
+9 - error NG8002: Can't 
+bind to 'aria-label' since 
+it isn't a known property 
+of 'a'.
+
+37         
+aria-label="Shopping cart 
+({{ cartCount }} items)"
+           ~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+
+  src/app/shared/header/hea
+der.component.ts:8:16
+    8   templateUrl: 
+'./header.component.html',
+                     
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the 
+template of component 
+HeaderComponent.
+
+
+

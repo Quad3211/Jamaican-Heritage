@@ -1,0 +1,87 @@
+<section class="section" aria-label="Shop">
+  <div class="container">
+    <p class="section-label">Browse our collection</p>
+    <h1 class="section-title">The <span>Shop</span></h1>
+
+    <!-- Filters -->
+    <div class="shop-toolbar">
+      <div class="shop-toolbar__filters">
+        <button
+          class="filter-chip"
+          [class.active]="!selectedCategory"
+          (click)="filterByCategory('')"
+        >
+          All
+        </button>
+        <button
+          *ngFor="let cat of categories"
+          class="filter-chip"
+          [class.active]="selectedCategory === cat"
+          (click)="filterByCategory(cat)"
+        >
+          {{ cat }}
+        </button>
+      </div>
+
+      <div class="shop-toolbar__search">
+        <label for="search-input" class="sr-only">Search products</label>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Search products…"
+          [value]="searchTerm"
+          (input)="onSearch($event)"
+          aria-label="Search products"
+        />
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <app-loading-spinner *ngIf="loading"></app-loading-spinner>
+
+    <!-- Products grid -->
+    <div class="grid-products" *ngIf="!loading && products.length > 0">
+      <article
+        class="product-card"
+        *ngFor="let product of products"
+        [attr.aria-label]="product.name"
+      >
+        <a [routerLink]="['/shop', product.id]">
+          <img
+            class="product-card__image"
+            [src]="product.image_url"
+            [alt]="product.name"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="product-card__body">
+          <span class="product-card__category">{{ product.category }}</span>
+          <h3 class="product-card__name">
+            <a [routerLink]="['/shop', product.id]">{{ product.name }}</a>
+          </h3>
+          <div class="product-card__price">
+            £{{ product.price | number: "1.2-2" }}
+          </div>
+          <a
+            [routerLink]="['/shop', product.id]"
+            class="btn btn-primary"
+            style="width: 100%"
+            >View Details</a
+          >
+        </div>
+      </article>
+    </div>
+
+    <!-- Empty state -->
+    <div
+      *ngIf="!loading && products.length === 0"
+      class="empty-state text-center"
+    >
+      <p style="font-size: 3rem" aria-hidden="true">🔍</p>
+      <h3>No products found</h3>
+      <p class="text-muted">Try adjusting your search or category filter.</p>
+    </div>
+  </div>
+</section>

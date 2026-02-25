@@ -1,0 +1,61 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="site-footer__grid">
+      <!-- Brand column -->
+      <div class="site-footer__brand">
+        <a
+          routerLink="/"
+          class="site-footer__logo"
+          aria-label="Jamaican Heritage Home"
+        >
+          <span aria-hidden="true">🇯🇲</span> Jamaican <strong>Heritage</strong>
+        </a>
+        <p>
+          Celebrating the rich culture, flavours, and craftsmanship of Jamaica —
+          delivered to your door.
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <nav aria-label="Footer navigation">
+        <h3 class="site-footer__heading">Explore</h3>
+        <ul>
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/shop">Shop</a></li>
+          <li><a routerLink="/about">About</a></li>
+          <li><a routerLink="/info">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Account links -->
+      <nav aria-label="Account navigation">
+        <h3 class="site-footer__heading">My Account</h3>
+        <ul>
+          <li><a routerLink="/login">Login</a></li>
+          <li><a routerLink="/register">Register</a></li>
+          <li><a routerLink="/dashboard">Dashboard</a></li>
+          <li><a routerLink="/orders">Order History</a></li>
+        </ul>
+      </nav>
+
+      <!-- Legal -->
+      <nav aria-label="Legal navigation">
+        <h3 class="site-footer__heading">Legal</h3>
+        <ul>
+          <li><a routerLink="/info" fragment="privacy">Privacy Policy</a></li>
+          <li>
+            <a routerLink="/info" fragment="accessibility">Accessibility</a>
+          </li>
+          <li><a routerLink="/info" fragment="contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr class="jam-divider" />
+
+    <div class="site-footer__bottom">
+      <p>&copy; {{ year }} Jamaican Heritage. All rights reserved.</p>
+      <p class="text-muted">Proudly celebrating Jamaican culture 🇯🇲</p>
+    </div>
+  </div>
+</footer>

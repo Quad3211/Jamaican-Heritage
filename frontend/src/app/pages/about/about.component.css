@@ -1,0 +1,63 @@
+.about-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.about-hero h1 {
+  color: var(--jam-white);
+}
+.about-hero .accent {
+  color: var(--jam-gold);
+}
+
+.about-content {
+  max-width: var(--max-w-narrow);
+  margin: 0 auto;
+}
+
+.about-block p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+@media (min-width: 640px) {
+  .about-values {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.value-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.value-card h3 {
+  margin: var(--space-md) 0 var(--space-sm);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+}
+
+/*# sourceMappingURL=about.component.css.map */

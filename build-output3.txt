@@ -1,0 +1,381 @@
+﻿npx : - Generating 
+browser application 
+bundles (phase: 
+setup)...
+At line:1 char:1
++ npx ng build 
+--configuration 
+production 2>&1 | 
+Out-File -FilePath C:\ 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (- Generating    
+ br...hase: setup).    
+..:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Γ£ö Browser 
+application bundle 
+generation complete.
+Γ£ö Browser 
+application bundle 
+generation complete.
+
+Warning: C:/myprojects/
+Class-excerise/Jamaican
+-Heritage/frontend/src/
+app/shared/header/heade
+r.component.scss 
+exceeded maximum 
+budget. Budget 2.00 kB 
+was not met by 984 
+bytes with a total of 
+2.96 kB.
+
+
+
+Error: src/app/pages/or
+der-history/order-histo
+ry.component.html:32:24
+ - error NG5002: 
+Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              
+'badge-gold':
+                
+order.status === 
+'pending' || 
+order.status === 
+'processing',
+              
+'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\my
+projects\Class-excerise
+\Jamaican-Heritage\fron
+tend\src\app\pages\orde
+r-history\order-history
+.component.html@31:23
+
+ 32             
+[ngClass]="{
+                       
+    ~
+ 33               
+'badge-green': 
+order.status === 
+'delivered',
+    ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+... 
+ 36               
+'badge-red': 
+order.status === 
+'cancelled',
+    ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
+ 37             }"
+    ~~~~~~~~~~~~~
+
+  src/app/pages/order-h
+istory/order-history.co
+mponent.ts:6:16
+    6   templateUrl: '.
+/order-history.componen
+t.html',
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    Error occurs in 
+the template of 
+component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/or
+der-history/order-histo
+ry.component.html:38:14
+ - error NG5002: 
+Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              
+'badge-gold':
+                
+order.status === 
+'pending' || 
+order.status === 
+'processing',
+              
+'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\my
+projects\Class-excerise
+\Jamaican-Heritage\fron
+tend\src\app\pages\orde
+r-history\order-history
+.component.html@31:23
+
+38             >{{ 
+order.status | 
+titlecase }}</span
+                ~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/order-h
+istory/order-history.co
+mponent.ts:6:16
+    6   templateUrl: '.
+/order-history.componen
+t.html',
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    Error occurs in 
+the template of 
+component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/or
+der-history/order-histo
+ry.component.html:42:35
+ - error NG5002: 
+Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              
+'badge-gold':
+                
+order.status === 
+'pending' || 
+order.status === 
+'processing',
+              
+'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\my
+projects\Class-excerise
+\Jamaican-Heritage\fron
+tend\src\app\pages\orde
+r-history\order-history
+.component.html@31:23
+
+42           <div 
+class="order-item" 
+*ngFor="let item of 
+order.items">
+                       
+              ~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/order-h
+istory/order-history.co
+mponent.ts:6:16
+    6   templateUrl: '.
+/order-history.componen
+t.html',
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    Error occurs in 
+the template of 
+component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/or
+der-history/order-histo
+ry.component.html:43:19
+ - error NG5002: 
+Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              
+'badge-gold':
+                
+order.status === 
+'pending' || 
+order.status === 
+'processing',
+              
+'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\my
+projects\Class-excerise
+\Jamaican-Heritage\fron
+tend\src\app\pages\orde
+r-history\order-history
+.component.html@31:23
+
+43             
+<span>{{ item.name }} 
+├ù {{ item.quantity 
+}}</span>
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+
+  src/app/pages/order-h
+istory/order-history.co
+mponent.ts:6:16
+    6   templateUrl: '.
+/order-history.componen
+t.html',
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    Error occurs in 
+the template of 
+component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/or
+der-history/order-histo
+ry.component.html:45:16
+ - error NG5002: 
+Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              
+'badge-gold':
+                
+order.status === 
+'pending' || 
+order.status === 
+'processing',
+              
+'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\my
+projects\Class-excerise
+\Jamaican-Heritage\fron
+tend\src\app\pages\orde
+r-history\order-history
+.component.html@31:23
+
+45               >┬ú{{ 
+item.unit_price * 
+item.quantity | 
+number: "1.2-2" 
+}}</span
+                  ~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+
+  src/app/pages/order-h
+istory/order-history.co
+mponent.ts:6:16
+    6   templateUrl: '.
+/order-history.componen
+t.html',
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    Error occurs in 
+the template of 
+component 
+OrderHistoryComponent.
+
+
+Error: src/app/pages/or
+der-history/order-histo
+ry.component.html:51:14
+ - error NG5002: 
+Parser Error: 
+Unexpected token }, 
+expected identifier, 
+keyword, or string at 
+column 236 in [{
+              
+'badge-green': 
+order.status === 
+'delivered',
+              
+'badge-gold':
+                
+order.status === 
+'pending' || 
+order.status === 
+'processing',
+              
+'badge-red': 
+order.status === 
+'cancelled',
+            }] in C:\my
+projects\Class-excerise
+\Jamaican-Heritage\fron
+tend\src\app\pages\orde
+r-history\order-history
+.component.html@31:23
+
+51             >Total: 
+┬ú{{ order.total_price 
+| number: "1.2-2" 
+}}</span
+                ~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+
+  src/app/pages/order-h
+istory/order-history.co
+mponent.ts:6:16
+    6   templateUrl: '.
+/order-history.componen
+t.html',
+                     ~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    Error occurs in 
+the template of 
+component 
+OrderHistoryComponent.
+
+
+

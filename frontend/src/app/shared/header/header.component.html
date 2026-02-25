@@ -1,0 +1,105 @@
+<header class="site-header" role="banner">
+  <div class="container site-header__inner">
+    <!-- Logo -->
+    <a
+      class="site-header__logo"
+      routerLink="/"
+      aria-label="Jamaican Heritage Home"
+    >
+      <span class="logo-flag" aria-hidden="true">🇯🇲</span>
+      <span class="logo-text">Jamaican <strong>Heritage</strong></span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul class="site-nav__list">
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+        <li><a routerLink="/info" routerLinkActive="active">Info</a></li>
+      </ul>
+    </nav>
+
+    <!-- Auth + Cart Controls -->
+    <div class="site-header__actions">
+      <!-- Cart button (shown when logged in) -->
+      <a
+        *ngIf="isLoggedIn"
+        routerLink="/cart"
+        class="btn-icon"
+        [attr.aria-label]="'Shopping cart (' + cartCount + ' items)'"
+      >
+        <span aria-hidden="true">🛒</span>
+        <span class="cart-badge" *ngIf="cartCount > 0" aria-hidden="true">{{
+          cartCount
+        }}</span>
+      </a>
+
+      <ng-container *ngIf="isLoggedIn; else guestLinks">
+        <a routerLink="/dashboard" class="btn btn-ghost btn-sm">Dashboard</a>
+        <button (click)="logout()" class="btn btn-outline btn-sm">
+          Sign out
+        </button>
+      </ng-container>
+
+      <ng-template #guestLinks>
+        <a routerLink="/login" class="btn btn-ghost btn-sm">Login</a>
+        <a routerLink="/register" class="btn btn-primary btn-sm">Register</a>
+      </ng-template>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      class="hamburger"
+      [class.is-open]="menuOpen"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen"
+      aria-controls="mobile-menu"
+      aria-label="Toggle navigation menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div
+    id="mobile-menu"
+    class="mobile-menu"
+    [class.is-open]="menuOpen"
+    role="dialog"
+    aria-label="Mobile navigation"
+  >
+    <nav aria-label="Mobile navigation">
+      <ul>
+        <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/shop" (click)="closeMenu()">Shop</a></li>
+        <li><a routerLink="/about" (click)="closeMenu()">About</a></li>
+        <li><a routerLink="/info" (click)="closeMenu()">Info</a></li>
+        <ng-container *ngIf="isLoggedIn; else mobileGuest">
+          <li>
+            <a routerLink="/dashboard" (click)="closeMenu()">Dashboard</a>
+          </li>
+          <li>
+            <a routerLink="/cart" (click)="closeMenu()"
+              >Cart ({{ cartCount }})</a
+            >
+          </li>
+          <li><a routerLink="/orders" (click)="closeMenu()">Orders</a></li>
+          <li><a routerLink="/profile" (click)="closeMenu()">Profile</a></li>
+          <li><button (click)="logout()">Sign out</button></li>
+        </ng-container>
+        <ng-template #mobileGuest>
+          <li><a routerLink="/login" (click)="closeMenu()">Login</a></li>
+          <li><a routerLink="/register" (click)="closeMenu()">Register</a></li>
+        </ng-template>
+      </ul>
+    </nav>
+  </div>
+</header>

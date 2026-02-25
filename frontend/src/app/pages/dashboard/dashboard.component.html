@@ -1,0 +1,31 @@
+<section class="section" aria-label="Dashboard">
+  <div class="container">
+    <h1 class="section-title">
+      Welcome, <span>{{ userName }}</span> 🇯🇲
+    </h1>
+    <p class="text-muted">Manage your orders, cart, and profile from here.</p>
+
+    <div class="dashboard-grid">
+      <a routerLink="/cart" class="dash-card">
+        <span class="dash-card__icon" aria-hidden="true">🛒</span>
+        <h3>My Cart</h3>
+        <p>{{ cartCount }} items in your cart</p>
+      </a>
+      <a routerLink="/orders" class="dash-card">
+        <span class="dash-card__icon" aria-hidden="true">📦</span>
+        <h3>Order History</h3>
+        <p>View your past orders</p>
+      </a>
+      <a routerLink="/profile" class="dash-card">
+        <span class="dash-card__icon" aria-hidden="true">👤</span>
+        <h3>Profile</h3>
+        <p>Update your account details</p>
+      </a>
+      <a routerLink="/shop" class="dash-card">
+        <span class="dash-card__icon" aria-hidden="true">🛍️</span>
+        <h3>Continue Shopping</h3>
+        <p>Browse Jamaican heritage products</p>
+      </a>
+    </div>
+  </div>
+</section>

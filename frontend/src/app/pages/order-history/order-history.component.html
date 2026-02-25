@@ -1,0 +1,50 @@
+<section class="section" aria-label="Order history">
+  <div class="container">
+    <h1 class="section-title">Order <span>History</span></h1>
+
+    <app-loading-spinner *ngIf="loading"></app-loading-spinner>
+
+    <div
+      *ngIf="!loading && orders.length === 0"
+      class="empty-state text-center"
+    >
+      <p style="font-size: 3rem" aria-hidden="true">📦</p>
+      <h3>No orders yet</h3>
+      <p class="text-muted">
+        Your order history will appear here after your first purchase.
+      </p>
+      <a routerLink="/shop" class="btn btn-primary mt-md">Start Shopping</a>
+    </div>
+
+    <div *ngIf="!loading && orders.length > 0" class="orders-list">
+      <article class="order-card" *ngFor="let order of orders">
+        <div class="order-card__header">
+          <div>
+            <span class="text-muted" style="font-size: 0.82rem"
+              >Order #{{ order.id }}</span
+            >
+            <p style="font-size: 0.85rem; margin: 0">
+              {{ order.created_at | date: "medium" }}
+            </p>
+          </div>
+          <span class="badge" [ngClass]="getStatusClass(order.status)">{{
+            order.status | titlecase
+          }}</span>
+        </div>
+        <div class="order-card__items">
+          <div class="order-item" *ngFor="let item of order.items">
+            <span>{{ item.name }} × {{ item.quantity }}</span>
+            <span
+              >£{{ item.unit_price * item.quantity | number: "1.2-2" }}</span
+            >
+          </div>
+        </div>
+        <div class="order-card__footer">
+          <span class="order-total"
+            >Total: £{{ order.total_price | number: "1.2-2" }}</span
+          >
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

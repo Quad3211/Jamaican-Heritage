@@ -1,0 +1,155 @@
+<section class="section" aria-label="Information">
+  <div class="container info-page">
+    <h1 class="section-title">Information & <span>Support</span></h1>
+
+    <!-- Tab navigation -->
+    <div class="info-tabs" role="tablist" aria-label="Information sections">
+      <button
+        *ngFor="let tab of tabs; let i = index"
+        role="tab"
+        [attr.aria-selected]="activeTab === i"
+        [attr.id]="'tab-' + i"
+        [attr.aria-controls]="'panel-' + i"
+        [class.active]="activeTab === i"
+        (click)="activeTab = i"
+        class="info-tab"
+      >
+        {{ tab.label }}
+      </button>
+    </div>
+
+    <!-- Contact -->
+    <div
+      *ngIf="activeTab === 0"
+      role="tabpanel"
+      id="panel-0"
+      aria-labelledby="tab-0"
+      class="info-panel"
+    >
+      <h2>Contact Us</h2>
+      <p>
+        We'd love to hear from you. Whether you have a question about a product,
+        an order, or just want to say hello — don't hesitate to reach out.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span aria-hidden="true">📧</span>
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:hello@jamaicanheritage.com"
+              >hello&#64;jamaicanheritage.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-card">
+          <span aria-hidden="true">📞</span>
+          <h3>Phone</h3>
+          <p>+1 (876) 555-0123</p>
+        </div>
+        <div class="contact-card">
+          <span aria-hidden="true">📍</span>
+          <h3>Address</h3>
+          <p>12 King Street, Kingston, Jamaica</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div
+      *ngIf="activeTab === 1"
+      role="tabpanel"
+      id="panel-1"
+      aria-labelledby="tab-1"
+      class="info-panel"
+    >
+      <h2>Privacy Policy</h2>
+      <p><strong>Last updated:</strong> February 2026</p>
+
+      <h3>1. Information We Collect</h3>
+      <p>
+        We collect minimal personal information necessary to process your
+        orders: your name, email address, and shipping details. Passwords are
+        securely hashed using bcrypt and never stored in plain text.
+      </p>
+
+      <h3>2. How We Use Your Data</h3>
+      <p>
+        Your data is used solely for order processing, account management, and
+        customer support. We will <strong>never</strong> sell, rent, or share
+        your personal information with third parties.
+      </p>
+
+      <h3>3. Data Storage & Security</h3>
+      <p>
+        All data is stored in an encrypted MySQL database. Communication between
+        the frontend and backend is secured via HTTPS. Authentication tokens
+        (JWT) are used for session management.
+      </p>
+
+      <h3>4. Cookies</h3>
+      <p>
+        We use only essential browser storage (localStorage) for authentication
+        tokens and shopping cart contents. No third-party tracking cookies are
+        used.
+      </p>
+
+      <h3>5. Your Rights</h3>
+      <p>
+        You may request access to, correction of, or deletion of your personal
+        data at any time by contacting us at
+        <a href="mailto:hello@jamaicanheritage.com"
+          >hello&#64;jamaicanheritage.com</a
+        >.
+      </p>
+
+      <h3>6. Consent</h3>
+      <p>
+        By creating an account and using our services, you consent to the
+        collection and use of information as described in this policy.
+      </p>
+    </div>
+
+    <!-- Accessibility Statement -->
+    <div
+      *ngIf="activeTab === 2"
+      role="tabpanel"
+      id="panel-2"
+      aria-labelledby="tab-2"
+      class="info-panel"
+    >
+      <h2>Accessibility Statement</h2>
+      <p>
+        Jamaican Heritage is committed to ensuring digital accessibility for
+        people of all abilities. We strive to conform to
+        <strong>WCAG 2.1 Level AA</strong> standards.
+      </p>
+
+      <h3>Measures We Take</h3>
+      <ul class="a11y-list">
+        <li>✅ All images include descriptive <code>alt</code> text</li>
+        <li>✅ Full keyboard navigation support</li>
+        <li>✅ Visible focus indicators on all interactive elements</li>
+        <li>✅ ARIA roles and labels on dynamic components</li>
+        <li>✅ High contrast colour palette exceeding 4.5:1 ratio</li>
+        <li>
+          ✅ Readable fonts (Outfit, Playfair Display) at accessible sizes
+        </li>
+        <li>✅ Skip-to-content link for screen-reader users</li>
+        <li>✅ Semantic HTML5 landmarks and headings</li>
+        <li>✅ Form validation with clear error messages</li>
+        <li>
+          ✅ Respects <code>prefers-reduced-motion</code> and
+          <code>prefers-contrast</code>
+        </li>
+      </ul>
+
+      <h3>Feedback</h3>
+      <p>
+        If you encounter any accessibility barriers, please contact us at
+        <a href="mailto:hello@jamaicanheritage.com"
+          >hello&#64;jamaicanheritage.com</a
+        >. We take all feedback seriously and will address issues promptly.
+      </p>
+    </div>
+  </div>
+</section>

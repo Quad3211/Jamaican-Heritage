@@ -1,0 +1,70 @@
+<section class="section auth-section" aria-label="Login">
+  <div class="container d-flex justify-center">
+    <div class="form-card">
+      <h1 class="text-center mb-lg" style="color: var(--jam-white)">
+        Welcome <span class="text-green">Back</span>
+      </h1>
+      <p class="text-center text-muted mb-xl" style="font-size: 0.92rem">
+        Log in to manage orders, track deliveries, and more.
+      </p>
+
+      <div *ngIf="error" class="alert alert-error mb-lg" role="alert">
+        {{ error }}
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input
+            id="login-email"
+            type="email"
+            formControlName="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            [class.is-invalid]="submitted && f['email'].invalid"
+          />
+          <span
+            *ngIf="submitted && f['email'].errors?.['required']"
+            class="form-error"
+            >Email is required.</span
+          >
+          <span
+            *ngIf="submitted && f['email'].errors?.['email']"
+            class="form-error"
+            >Enter a valid email.</span
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="login-pass">Password</label>
+          <input
+            id="login-pass"
+            type="password"
+            formControlName="password"
+            autocomplete="current-password"
+            placeholder="Your password"
+            [class.is-invalid]="submitted && f['password'].invalid"
+          />
+          <span
+            *ngIf="submitted && f['password'].errors?.['required']"
+            class="form-error"
+            >Password is required.</span
+          >
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary btn-lg"
+          style="width: 100%"
+          [disabled]="loading"
+        >
+          {{ loading ? "Signing in…" : "Sign In" }}
+        </button>
+      </form>
+
+      <p class="text-center mt-lg text-muted" style="font-size: 0.9rem">
+        Don't have an account? <a routerLink="/register">Create one</a>
+      </p>
+    </div>
+  </div>
+</section>

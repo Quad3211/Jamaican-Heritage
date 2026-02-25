@@ -1,0 +1,53 @@
+<section class="hero-section about-hero" aria-label="About hero">
+  <div class="container">
+    <h1>About Jamaican <span class="accent">Heritage</span></h1>
+    <p style="max-width: 600px; color: rgba(255, 255, 255, 0.85)">
+      A journey through the culture, resilience, and vibrant spirit of Jamaica.
+    </p>
+  </div>
+</section>
+
+<section class="section" aria-label="Our story">
+  <div class="container about-content">
+    <article class="about-block">
+      <h2 class="section-title">Our <span>Story</span></h2>
+      <p>
+        Jamaican Heritage was born from a love of island culture and a desire to
+        share it with the world. We work directly with Jamaican artisans,
+        farmers, and small businesses to bring you products that are
+        authentically crafted and rooted in tradition.
+      </p>
+      <p>
+        Every product tells a story — whether it's the careful roasting of Blue
+        Mountain coffee beans, the hand-weaving of a straw basket in a rural
+        community, or the generations-old jerk seasoning recipe passed down
+        through families.
+      </p>
+    </article>
+
+    <hr class="jam-divider" />
+
+    <article class="about-block">
+      <h2 class="section-title">Jamaican <span>Culture</span></h2>
+      <p>
+        Jamaica is more than a Caribbean island — it's a cultural powerhouse.
+        From reggae music and Rastafari to dancehall, patois, and an unmatched
+        culinary tradition, the island's influence spans the globe.
+      </p>
+      <p>
+        Our mission is to celebrate that richness by curating products that
+        embody Jamaican creativity, warmth, and excellence.
+      </p>
+    </article>
+
+    <hr class="jam-divider" />
+
+    <div class="about-values">
+      <div class="value-card" *ngFor="let v of values">
+        <span class="value-icon" aria-hidden="true">{{ v.icon }}</span>
+        <h3>{{ v.title }}</h3>
+        <p>{{ v.desc }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+﻿npx : - Generating 
+browser application 
+bundles (phase: 
+setup)...
+At line:1 char:1
++ npx ng build 
+--configuration 
+production 2>&1 | 
+Out-File -FilePath C:\ 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (- Generating    
+ br...hase: setup).    
+..:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+Γ£ö Browser 
+application bundle 
+generation complete.
+Γ£ö Browser 
+application bundle 
+generation complete.
+- Copying assets...
+Γ£ö Copying assets 
+complete.
+- Generating index 
+html...
+Γ£ö Index html 
+generation complete.
+
+Initial Chunk Files           | Names                                    |  Raw Size | Estimated Transfer Size
+main.df126a62f2c30f70.js      | main                                     | 347.42 kB |                88.88 kB
+polyfills.5fd626fde791e8c3.js | polyfills                                |  33.07 kB |                10.67 kB
+styles.b8eeb8bb81ee4d85.css   | styles                                   |  10.38 kB |                 2.48 kB
+runtime.ca1538b71a5b4060.js   | runtime                                  |   2.82 kB |                 1.36 kB
+
+| Initial Total                            | 393.69 kB |               103.40 kB
+
+Lazy Chunk Files              | Names                                    |  Raw Size | Estimated Transfer Size
+924.dd4b56d2b692c4d6.js       | pages-cart-cart-module                   |   7.67 kB |                 2.31 kB
+241.a89078d4e78222a4.js       | pages-profile-profile-module             |   4.84 kB |                 1.64 kB
+381.59e745eadbdcf174.js       | pages-order-history-order-history-module |   4.51 kB |                 1.61 kB
+728.48c55e6021063095.js       | pages-dashboard-dashboard-module         |   3.13 kB |                 1.16 kB
+common.c5a59445f966ac0f.js    | common                                   | 534 bytes |               297 bytes
+
+Build at: 2026-02-24T17:30:59.146Z - Hash: a1a7aa9f4350fb0d - Time: 26570ms
+
+Warning: C:/myprojects/
+Class-excerise/Jamaican
+-Heritage/frontend/src/
+app/shared/header/heade
+r.component.scss 
+exceeded maximum 
+budget. Budget 2.00 kB 
+was not met by 984 
+bytes with a total of 
+2.96 kB.
+
+
