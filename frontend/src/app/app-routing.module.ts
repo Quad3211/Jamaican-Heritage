@@ -2,36 +2,38 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './pages/home/home.component';
-import { ShopComponent } from './pages/shop/shop.component';
-import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
-import { AboutComponent } from './pages/about/about.component';
-import { InfoComponent } from './pages/info/info.component';
-import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
 import { AuthGuard } from './core/guards/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, title: 'Home | Jamaican Heritage' },
-  { path: 'shop', component: ShopComponent, title: 'Shop | Jamaican Heritage' },
   {
-    path: 'shop/:id',
-    component: ProductDetailComponent,
-    title: 'Product | Jamaican Heritage',
+    path: 'shop',
+    loadChildren: () =>
+      import('./pages/shop/shop.module').then((m) => m.ShopModule),
+    title: 'Shop | Jamaican Heritage',
   },
   {
     path: 'about',
-    component: AboutComponent,
+    loadChildren: () =>
+      import('./pages/about/about.module').then((m) => m.AboutModule),
     title: 'About | Jamaican Heritage',
   },
-  { path: 'info', component: InfoComponent, title: 'Info | Jamaican Heritage' },
+  {
+    path: 'info',
+    loadChildren: () =>
+      import('./pages/info/info.module').then((m) => m.InfoModule),
+    title: 'Info | Jamaican Heritage',
+  },
   {
     path: 'login',
-    component: LoginComponent,
+    loadChildren: () =>
+      import('./pages/login/login.module').then((m) => m.LoginModule),
     title: 'Login | Jamaican Heritage',
   },
   {
     path: 'register',
-    component: RegisterComponent,
+    loadChildren: () =>
+      import('./pages/register/register.module').then((m) => m.RegisterModule),
     title: 'Register | Jamaican Heritage',
   },
 

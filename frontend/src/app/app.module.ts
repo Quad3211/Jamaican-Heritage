@@ -10,24 +10,9 @@ import { SharedModule } from './shared/shared.module';
 
 // Public pages
 import { HomeComponent } from './pages/home/home.component';
-import { ShopComponent } from './pages/shop/shop.component';
-import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
-import { AboutComponent } from './pages/about/about.component';
-import { InfoComponent } from './pages/info/info.component';
-import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ShopComponent,
-    ProductDetailComponent,
-    AboutComponent,
-    InfoComponent,
-    LoginComponent,
-    RegisterComponent,
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
